@@ -4,6 +4,7 @@
 *.pyc
 *.so
 *.tar.gz
+.Trash*
 *~
 TAGS
 build/
