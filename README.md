@@ -1,6 +1,8 @@
 # racecar-gazebo
 [MIT Racecar](https://github.com/mit-racecar) samples on gazebo-based simulator with Docker
 
+Sample Video - ["ROS and Gazebo on Docker and show Lidar datas"](https://www.youtube.com/watch?v=M1NWQW8Tv60)
+
 ## Docker - ros/gazebo
 
 #### Pull and Run Docker
