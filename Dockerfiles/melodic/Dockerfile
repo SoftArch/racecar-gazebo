@@ -3,7 +3,7 @@ FROM dorowu/ubuntu-desktop-lxde-vnc
 LABEL maintainer "ahmet.kabaoglu@gmail.com"
 
 #Install dirmngr
-RUN apt-get install dirmngr --install-recommends
+RUN apt-get update && apt-get install -y dirmngr
 
 # Adding keys for ROS
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
