@@ -12,6 +12,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C1CF6E31E6B
 # Installing ROS
 RUN apt-get update && apt-get install -y ros-melodic-desktop-full \
 		wget git nano
+RUN apt-get install python-rosdep
 RUN rosdep init && rosdep update
 
 # Update Gazebo 9
