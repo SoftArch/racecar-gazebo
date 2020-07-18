@@ -22,4 +22,7 @@ RUN apt-get install -y ros-kinetic-ros-controllers
 # Installing Atom Editor
 RUN add-apt-repository ppa:webupd8team/atom && apt update && apt install -y atom
 
+RUN sudo apt update
+RUN sudo apt upgrade
+
 RUN /bin/bash -c "echo 'export HOME=/home/ubuntu' >> /root/.bashrc && source /root/.bashrc"
