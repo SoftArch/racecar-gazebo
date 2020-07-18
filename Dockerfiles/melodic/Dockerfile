@@ -2,6 +2,8 @@
 FROM dorowu/ubuntu-desktop-lxde-vnc
 LABEL maintainer "ahmet.kabaoglu@gmail.com"
 
+RUN sudo apt-get update && sudo apt-get -y upgrade
+
 #Install dirmngr
 RUN apt-get update && apt-get install -y dirmngr
 
@@ -25,7 +27,5 @@ RUN apt-get install -y ros-melodic-ros-controllers
 
 # Installing Atom Editor
 RUN add-apt-repository ppa:webupd8team/atom && apt update && apt install -y atom
-
-RUN sudo apt-get update && sudo apt-get -y upgrade
 
 RUN /bin/bash -c "echo 'export HOME=/home/ubuntu' >> /root/.bashrc && source /root/.bashrc"
