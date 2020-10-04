@@ -23,7 +23,7 @@ Open [http://localhost:6080/](http://localhost:6080/)
 
 #### Build Workspace (step 2)
         cd Desktop/racecar-gazebo
-        source /opt/ros/kinetic/setup.bash
+        source /opt/ros/melodic/setup.bash
         catkin_make
         
 
