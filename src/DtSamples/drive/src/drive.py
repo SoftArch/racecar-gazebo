@@ -7,7 +7,7 @@ from ackermann_msgs.msg import AckermannDriveStamped
 
 if __name__ == '__main__':
 	rospy.init_node('racecar_driver',anonymous=True)
-	pub = rospy.Publisher('/vesc/high_level/ackermann_cmd_mux/output', AckermannDriveStamped,queue_size=10)
+	pub = rospy.Publisher('/vesc/high_level/ackermann_cmd_mux/input/nav_0', AckermannDriveStamped,queue_size=10)
 
 	rate = rospy.Rate(20)
 	while not rospy.is_shutdown():
