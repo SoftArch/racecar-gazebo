@@ -18,7 +18,7 @@ class worker:
 
         rospy.Subscriber('/scan',LaserScan,self.callback_laser)
 
-        self.pub = rospy.Publisher('/vesc/high_level/ackermann_cmd_mux/output', AckermannDriveStamped,queue_size=1)
+        self.pub = rospy.Publisher('/vesc/high_level/ackermann_cmd_mux/input/nav_0', AckermannDriveStamped,queue_size=1)
 
         #while not rospy.is_shutdown():
         #    self.msg.drive.speed = self.speed
